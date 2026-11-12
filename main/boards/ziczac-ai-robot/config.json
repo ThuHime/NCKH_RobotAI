@@ -1,0 +1,14 @@
+{
+    "type": "ziczac-ai-robot",
+    "target": "esp32s3",
+    "builds": [
+        {
+            "name": "ziczac-ai-robot",
+            "sdkconfig_append": [
+                "CONFIG_ESPTOOLPY_FLASHSIZE_16MB=y",
+                "CONFIG_PARTITION_TABLE_CUSTOM_FILENAME=\"partitions/v2/16m.csv\"",
+                "CONFIG_LANGUAGE_VI_VN=y"
+            ]
+        }
+    ]
+}
